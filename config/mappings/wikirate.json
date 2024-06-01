@@ -1,0 +1,22 @@
+{
+  "index_patterns": [
+    "wikirate"
+  ],
+  "mappings": {
+    "properties": {
+      "type_id": {
+        "type": "keyword"
+      },
+      "autocomplete_field": {
+        "type": "completion",
+        "contexts": [
+          {
+            "name": "type_id",
+            "type": "category",
+            "path": "type_id"
+          }
+        ]
+      }
+    }
+  }
+}

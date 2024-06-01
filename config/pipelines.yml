@@ -1,0 +1,2 @@
+- pipeline.id: wikirate
+  path.config: "/usr/share/logstash/pipeline/wikirate.conf"

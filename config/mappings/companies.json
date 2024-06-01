@@ -1,0 +1,32 @@
+{
+  "index_patterns": [
+    "companies"
+  ],
+  "mappings": {
+    "properties": {
+      "headquarters": {
+        "type": "keyword"
+      },
+      "sec_cik": {
+        "type": "text",
+        "analyzer": "keyword"
+      },
+      "oar_id": {
+        "type": "text",
+        "analyzer": "keyword"
+      },
+      "open_corporates": {
+        "type": "text",
+        "analyzer": "keyword"
+      },
+      "uk_cn": {
+        "type": "text",
+        "analyzer": "keyword"
+      },
+      "aus_cn": {
+        "type":"text",
+        "analyzer": "keyword"
+      }
+    }
+  }
+}
