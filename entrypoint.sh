@@ -4,9 +4,9 @@ set -euo pipefail
 
 export DATABASE_PORT=${DATABASE_PORT:-3306}
 
-cards="'headquarters','sec_cik','oar_id','open_corporates_id','wikirate_company',\
-'metric','source','phrase','wikirate_title','wikirate_topic','project',\
-'research_group','company_group','dataset','uk_cn', 'abn'"
+cards="'headquarters','company',\
+'metric','source','phrase','wikirate_title','topic','project',\
+'research_group','company_group','dataset','company_identifier'"
 
 query="SELECT CONCAT('PARAM_', UPPER(IFNULL(codename, name)), '=', id) AS result \
 FROM cards WHERE codename IN ($cards) OR name IN ($cards)"
