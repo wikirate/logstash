@@ -3,8 +3,8 @@ SELECT
   cards.id,
   IF (
     cards.created_at = cards.updated_at,
-    "create",
-    IF (cards.trash = 1, "delete", "update")
+    'create',
+    IF (cards.trash = 1, 'delete', 'update')
   ) AS action_type,
   titles.search_content AS name,
   cards.left_id,

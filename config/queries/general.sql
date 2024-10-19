@@ -2,8 +2,8 @@ SELECT
   cards.updated_at,
   IF (
     cards.created_at = cards.updated_at,
-    "create",
-    IF (cards.trash = 1, "delete", "update")
+    'create',
+    IF (cards.trash = 1, 'delete', 'update')
   ) AS action_type,
   cards.id,
   cards.name,

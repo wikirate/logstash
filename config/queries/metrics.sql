@@ -4,8 +4,8 @@ SELECT
   titles.name AS name,
   IF (
     cards.created_at = cards.updated_at,
-    "create",
-    IF (cards.trash = 1, "delete", "update")
+    'create',
+    IF (cards.trash = 1, 'delete', 'update')
   ) AS action_type,
   metrics.designer_id AS left_id,
   metrics.title_id AS right_id,

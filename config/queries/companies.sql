@@ -1,5 +1,5 @@
 SELECT co.updated_at,
-  IF(co.created_at = co.updated_at, "create", IF(co.trash=1, "delete", "update")) as action_type,
+  IF(co.created_at = co.updated_at, 'create', IF(co.trash=1, 'delete', 'update')) as action_type,
   co.id,
   co.name,
   hq.db_content as headquarters,
