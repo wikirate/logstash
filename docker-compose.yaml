@@ -10,6 +10,7 @@ services:
       - DATABASE_NAME=${DATABASE_NAME}
       - DATABASE_USERNAME=${DATABASE_USERNAME}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_SSL_MODE=${DATABASE_SSL_MODE}
     volumes:
       - data:/usr/share/logstash/data
     extra_hosts:
