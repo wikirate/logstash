@@ -5,10 +5,9 @@
   "mappings": {
     "properties": {
       "headquarters": {
-        "type": "text",
-        "index": "not_analyzed"
+        "type": "keyword"
       },
-      "coroporate_identifiers": {
+      "corporate_identifiers": {
         "type": "keyword"
       }
     }
