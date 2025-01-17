@@ -8,7 +8,7 @@ SELECT
   co.id,
   co.name,
   hq.db_content AS headquarters,
-  GROUP_CONCAT(cids.db_content SEPARATOR ',') AS corporate_identifiers
+  GROUP_CONCAT(cids.db_content SEPARATOR ';') AS company_identifiers
 FROM
   cards AS co
   LEFT JOIN cards AS hq ON co.id = hq.left_id
