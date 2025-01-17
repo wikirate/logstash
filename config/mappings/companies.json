@@ -7,7 +7,7 @@
       "headquarters": {
         "type": "keyword"
       },
-      "corporate_identifiers": {
+      "company_identifiers": {
         "type": "keyword"
       }
     }
